@@ -5,7 +5,7 @@ import requests
 import os
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
-APP_URL = "http://127.0.0.1:5000"
+APP_URL = os.getenv("http://127.0.0.1:5000")
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix='!', intents=intents)
